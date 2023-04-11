@@ -1,0 +1,13 @@
+current directory: /Users/pushpendra/Desktop/jsproject/js_crack/vendor/bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+/Users/pushpendra/.rbenv/versions/2.7.6/bin/ruby -I /Users/pushpendra/.rbenv/versions/2.7.6/lib/ruby/2.7.0 -r ./siteconf20230411-16794-17fpbaq.rb extconf.rb
+creating Makefile
+
+current directory: /Users/pushpendra/Desktop/jsproject/js_crack/vendor/bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/pushpendra/Desktop/jsproject/js_crack/vendor/bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/pushpendra/Desktop/jsproject/js_crack/vendor/bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR=" install
