@@ -17,7 +17,10 @@ import {
   View,
 } from 'react-native';
 
-import ReactMoE from 'react-native-moengage'
+import ReactMoE, {
+  MoEAppStatus,
+  MoEProperties,
+} from 'react-native-moengage'
 
 import {
   Colors,
@@ -65,6 +68,27 @@ function App(): JSX.Element {
   };
 
   ReactMoE.initialize("8SIW681S80Z08KSHQFSTIZ8T");
+  ReactMoE.setAppStatus(MoEAppStatus.Install);
+  
+  // User Login and Attrib
+  ReactMoE.setUserUniqueID("react@test.com");
+  ReactMoE.setUserName("abc");
+  ReactMoE.setUserFirstName("abc");
+  ReactMoE.setUserLastName("xyz");
+  ReactMoE.setUserEmailID("abc@xyz.com");
+  ReactMoE.setUserContactNumber("1234567890");
+  ReactMoE.setUserGender("Male");
+
+  // custom event
+  let properties = new MoEProperties();
+  properties.addAttribute("quantity", 1);
+  properties.addAttribute("product", "iPhone");
+  properties.addAttribute("currency", "dollar");
+  properties.addAttribute("price", 699);
+  properties.addAttribute("new_item", true);
+  properties.addDateAttribute("purchase_date", "2020-06-10T12:42:10Z");
+
+  ReactMoE.trackEvent("Purchase", properties);
 
   return (
     <SafeAreaView style={backgroundStyle}>
